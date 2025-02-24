@@ -14,6 +14,12 @@ use App\Http\Controllers\ArticleController;
 
 use App\Http\Controllers\PhotoController;
 
+//Route::get('/greeting', function () {
+	//return view('blog.hello', ['name' => 'Sitta']);
+//});
+
+Route::get('/greeting', [WelcomeController::class, 'greeting']);
+
 Route::resource('photos', PhotoController::class);
 
 Route::resource('photos', PhotoController::class)->only([
