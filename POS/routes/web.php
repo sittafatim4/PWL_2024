@@ -12,7 +12,7 @@ Route::get('/food-beverage', function () {
     return view('food-beverage');
 });
 
-Route::get('/user/{id}/name/{name}', [UserController::class, 'show']);
+Route::get('/user/profile', [UserController::class, 'profile']);
 
 Route::prefix('category')->group(function () {
     Route::get('/food-beverage', [ProductController::class, 'foodBeverage']);

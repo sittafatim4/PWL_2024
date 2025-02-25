@@ -8,7 +8,7 @@
     <div class="nav-container">
         <div class="nav-item" onclick="goTo('{{ url('/') }}')">🏠 Home</div>
         <div class="nav-item" onclick="goTo('{{ url('/sales') }}')">💰 Transaction</div>
-        <div class="nav-item" onclick="goTo('{{ url('/user/101/name/Alex') }}')">👤 Profile</div>
+        <div class="nav-item" onclick="goTo('{{ url('/user/profile') }}')">👤 Profile</div>
     </div>    
     <style>
         body {

@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layout')
 @section('content')
     <h1>Welcome to POS</h1>
     <a href="/category/food-beverage">🍣 Food & Beverage</a>
