@@ -6,6 +6,8 @@ use App\Http\Controllers\WelcomeController;
 
 use App\Http\Controllers\KategoriController;
 
+use App\Http\Controllers\UserController;
+
 use App\Http\Controllers\PageController;
 
 use App\Http\Controllers\LevelController;
@@ -25,6 +27,8 @@ Route::get('/', function() {
 Route::get('/level', [levelController::class, 'index']);
 
 Route::get('/kategori', [KategoriController::class, 'index']);
+
+Route::get('/user', [UserController::class, 'index']);
 
 //Route::get('/greeting', function () {
 	//return view('blog.hello', ['name' => 'Sitta']);
